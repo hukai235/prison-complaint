@@ -1,0 +1,32 @@
+.my-main{
+    color:#fff;    
+}
+.info-title{
+    font-size:2em;
+    font-weight:600;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:45%;
+}
+.emp-info{
+    margin-bottom:5px;
+}
+.emp-info p{
+    text-align:center;
+    font-size:1.1em;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.emp-photo img{
+    width:165px;
+    height:214px;
+}
+.comp-btn>a{
+    color:#000;
+}
+@media screen and (max-width:767px){
+  .info-title{   
+    margin-left:30%;
+    }   
+}

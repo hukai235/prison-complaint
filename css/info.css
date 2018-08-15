@@ -1,0 +1,32 @@
+
+.my-main{
+    color:#fff;    
+}
+.info-title{
+    font-size:2em;
+    font-weight:600;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:45%;
+}
+.info-title~p{
+    font-size:1.2em;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.my-btn{
+    margin-left:45%;
+    margin-top:30px;
+    color:#000;
+}
+@media screen and (max-width:767px){
+   .info-title{
+    margin-left:37%;
+    }
+    .my-btn{
+    margin-left:38%;
+    }
+    .my-main{
+        margin:0 15px;
+    }
+}

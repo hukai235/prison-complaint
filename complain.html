@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/base.css" rel="stylesheet">
+  <link href="css/complain.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="nav navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand my-logo"></a>
+      <span class="navbar-text navbar-left">宝鸡监狱阳光狱务</span>
+      <a href="#menu" class="navbar-toggle" data-toggle="collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+    <div id="menu" class="collapse navbar-collapse">
+      <!--右侧导航栏-->
+      <p class="navbar-text navbar-right">
+          <!--<a href="#" class="backHome"></a>-->
+          <a href="index.html">首页</a>
+      </p>
+      <p class="navbar-text navbar-right">
+          <!--<a href="#" class="backTo"></a>-->
+          <a href="javascript:;" class="my-back">返回</a>
+      </p>
+      <p id="showCurrentTime" class="navbar-text navbar-right"></p> 
+    </div>
+  </div>
+</div>
+ <div class="my-main">
+   <div class="container">
+      <p>您当前的位置：<span id="title"></span> -> <span id="dname"></span></p>       
+      <p class="info-title">我要投诉</p>
+      <form id="info-container" class="form-horizontal" method="post" action="data/complain_submit.php">
+       <!--投诉人信息隐藏-->
+        <input type="hidden" name="comp_name" value="丁丁">
+        <input type="hidden" name="comp_ID" value="4254201255643205">
+        <input type="hidden" name="comp_date" value="" id="comp_date"> 
+        <!--显示在页面的表单数据-->
+        <div class="form-group">
+            <img src="" alt="" class="img-responsive">
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-4 col-sm-3" for="enum">警号 :</label>
+            <input class="form-control col-xs-8 col-sm-9" type="text" value="" id="enum" readonly name="poli_num">
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-4 col-sm-3" for="eduty">职务 :</label>
+            <input class="form-control col-xs-8 col-sm-9" type="text" value="" id="eduty" readonly>
+        </div>
+        <div class="form-group" id="complain-show">
+            <label class="control-label col-xs-4 col-sm-3" for="comp-msg">投诉意见 :</label>            
+            <select name="pc_msg" id="pc-msg" class="form-control col-xs-8 col-sm-9">
+            </select>
+        </div>
+        <div class="form-group" id="eval-show">
+            <label class="control-label col-xs-4 col-sm-3" for="eval-msg">评价意见 :</label>            
+            <button type="button" id="eval-msg" class="btn btn-info col-xs-8 col-sm-9" data-target="#eval-modal" data-toggle="modal">请选择</button>
+        </div>
+        <div class="form-group" id="evidence-show">
+            <label class="control-label col-xs-4 col-sm-3 radio-label">有无证据 :</label> 
+            <input type="radio" name="has_evid" value="1" class="radio-inline">&nbsp;有
+            <input type="radio" name="has_evid" value="0" checked class="radio-inline">&nbsp;无
+        </div>
+        <div class="form-group" id="info-from">
+            <label class="control-label col-xs-4 col-sm-3 radio-label">消息来源 :</label> 
+            <input type="radio" name="info_from" value="0" checked class="radio-inline">&nbsp;听说
+            <input type="radio" name="info_from" value="1" class="radio-inline">&nbsp;听见
+            <input type="radio" name="info_from" value="2" class="radio-inline">&nbsp;我是当事人
+        </div>
+        <div class="form-group" id="issign">
+            <label class="control-label col-xs-4 col-sm-3 radio-label">是否署名 :</label> 
+            <input type="radio" name="issign" value="0" checked class="radio-inline">&nbsp;署名
+            <input type="radio" name="issign" value="1" class="radio-inline">&nbsp;匿名
+        </div>
+        <div class="form-group">
+            <button class="btn btn-warning submit-btn" type="button" >确认提交</button>
+        </div>
+      </form>
+   </div> 
+  <!--评价意见弹出框-->
+  <div id="eval-modal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close glyphicon glyphicon-remove-circle" data-dismiss="modal"></span>
+        </div>
+        <div class="modal-body">
+          
+        </div>      
+      </div>
+    </div>
+  </div>
+ </div> 
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/complain.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+.my-main{
+    color:#fff;    
+}
+.info-title{
+    font-size:2em;
+    font-weight:600;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:45%;
+}
+#info-container{
+    width:60%;
+    margin:0 auto;
+    font-size:1.2em;
+}
+#info-container img{
+    width:25%;
+    margin:0 auto;
+}
+#enum,#eduty,#pc-msg,#enfo_type,#enfo_part,#enfo_poli,#enfo_date,#enfo_addr,#enfo_id,#enfo_msg{
+    width:60%;
+}
+#eval-msg{
+    width:20%;
+    color:#000;
+}
+#info-container label{
+    font-weight:normal;
+    text-align:right;
+}
+#info-container .radio-label{
+    padding-top:0px;    
+}
+#info-container .submit-btn{
+    margin-left:42%;
+    font-size:1.1em;
+    color:#000;
+}
+#info-container .form-group{
+    margin-top:20px;
+}
+@media screen and (max-width:767px){
+  #info-container{
+    width:100%;
+    margin-left:-3%;
+    font-size:1.2em;
+  } 
+  .info-title{
+    margin-left:38%;
+  }  
+  #info-container .submit-btn{
+    margin-left:40%;
+    font-size:1.1em;
+    color:#000;
+  }
+  #info-container img{
+    margin-left:42%;
+  }
+}
+#modal-msg .modal-content{
+    color:#000;
+    margin-top:50%;
+    margin-left:23%;
+    width:60%;
+}
+#modal-msg .close,#eval-modal .close{
+    position:relative;
+    top:-5px;
+    left:2px;
+}
+#modal-msg .modal-body{
+    text-align:center;
+}
+#modal-msg .modal-body p{
+    font-size:1.2em;
+}
+#modal-msg .modal-body button{
+    margin-top:15px;
+}
+#eval-modal .modal-content{
+    color:#000;
+}
+/*#eval-modal .modal-body span{
+    display:inline-block;
+    margin:5px 5px;
+}*/
+#eval-modal .modal-body p{
+    display:inline-block;
+    margin:5px 10px;
+    text-align:center;
+}
+#eval-modal .modal-body>.row>span{
+    display:inline-block;
+    margin:5px 10px;
+    text-align:right;
+}
+#eval-modal .eval-btn{
+    margin-left:45%;
+    margin-top:2%;
+}
+#enfo_issign label{
+    padding-top:0px;
+}

@@ -1,0 +1,64 @@
+
+.my-main{
+    color:#fff;    
+}
+.info-title{
+    font-size:2em;
+    font-weight:600;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:45%;
+}
+.part-list>a{
+    color:#000;
+    font-size:1.2em;
+}
+.part-list>a{
+    margin:2.5% 4%;
+} 
+.input-msg span{
+    font-size:1.2em;
+}
+.input-msg input{
+    color:#000;
+    font-size:1.2em;
+    border-radius:3px;
+    border:none;
+    width:60%;
+    height:38px;
+}
+.input-msg+button{
+    color:#000;
+    margin-left:-8%;
+    font-size:1.2em;
+}
+@media screen and (max-width:767px){
+  .info-title{   
+    margin-left:30%;
+    }
+    .part-list{
+       margin-top:8%;
+    }   
+}
+@media screen and (min-width:768px){
+  /*.info-title{   
+    margin-left:45%;
+    }*/
+   .part-list{
+       margin-top:5%;
+    }
+    .info-title+div{
+        margin-top:5%;
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .num-table{
+        margin-top:5%;
+        margin-left:5%;
+    }
+}
+.table td{
+    width:30%;
+    font-size:2em;
+}

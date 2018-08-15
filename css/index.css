@@ -1,0 +1,40 @@
+
+
+
+.set-font{
+        font-size:1.5em;        
+        color:#fff;
+        text-align:left;
+        padding-left:15%;
+        margin-top:10px;
+}
+.row>a{
+    display:block;
+}
+@media screen and (min-width:991px){
+  .my-main>.container{
+      margin-top:22%;     
+  }  
+}
+@media screen and (min-width:768px) and (max-width:991px){
+  .my-main>.container{
+      margin-top:50%;
+     margin-left:-20px;     
+  }  
+}
+@media screen and (max-width:767px){
+  .row img{
+      width:40%;
+  }
+  .col-xs-style{
+      margin:20px 0;
+  }
+  .set-font{
+      font-size:1.5em;
+      padding-left:5%;       
+  }  
+  .my-main>.container{
+      margin-top:25%;
+      margin-left:35%;
+  }  
+}

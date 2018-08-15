@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>首页 — 宝鸡监狱投诉处理后台管理系统 </title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+</head>
+<body class="nav-md">
+<div class="container body">
+  <div class="main_container">
+    <div class="col-md-3 left_col">
+      <div class="left_col scroll-view">
+        <div class="navbar nav_title" style="border: 0;">
+          <a href="admin_index.html" class="site_title"><img src="img/index/logo.png" alt="">&nbsp;&nbsp;<span>投诉处理后台</span></a>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!-- menu profile quick info -->
+        <div class="profile clearfix">
+          <div class="profile_pic">
+            <img src="img/avatar/default.jpg" alt="..." class="img-circle profile_img">
+          </div>
+          <div class="profile_info">
+            <span>欢迎回来,</span>
+            <h2 class="enum-show">超级管理员</h2>
+          </div>
+        </div>
+        <!-- /menu profile quick info -->
+
+        <br/>
+
+        <!-- sidebar menu -->
+        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+          <div class="menu_section">
+            <ul class="nav side-menu">
+              <li class="active"><a href="admin_index.html"><i class="fa fa-home"></i>后台首页</a></li>
+            </ul>
+          </div>
+          <div class="menu_section">
+            <h3>系统管理</h3>
+            <ul class="nav side-menu">
+              <li><a href="admin_partinfo.html"><i class="fa fa-laptop"></i> 部门管理 <span class="fa fa-chevron-right"></span></a>
+              </li>
+              <li><a href="admin_empinfo.html"><i class="fa fa-user"></i> 人员管理 <span class="fa fa-chevron-right"></span></a>
+              </li>
+              <li><a href="admin_roleinfo.html"><i class="fa fa-wrench" ></i> 权限管理 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="javascript:;">角色管理</a></li>
+                  <li><a href="javascript:;">模块管理</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="menu_section">
+            <h3>数据字典</h3>
+            <ul class="nav side-menu">
+              <li><a><i class="fa fa-life-ring"></i> 数据字典管理 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="javascript:;">投诉警察意见</a></li>
+                  <li><a href="javascript:;">警察满意度评价</a></li>
+                  <li><a href="javascript:;">执法类型</a></li>
+                  <li><a href="javascript:;">执法地点</a></li>
+                  <li><a href="javascript:;">执法评价意见</a></li>
+                </ul>
+              </li>              
+            </ul>
+          </div>
+          <div class="menu_section">
+            <h3>评价投诉</h3>
+            <ul class="nav side-menu">
+              <li><a href="admin_infodeal.html"><i class="fa fa-pencil-square-o"></i> 评价投诉信息处理 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="javascript:;">警察投诉</a></li>
+                  <li><a href="javascript:;">警察评价</a></li>
+                  <li><a href="javascript:;">执法评价</a></li>                
+                </ul>
+              </li>           
+            </ul>
+          </div>
+
+        </div>
+        <!-- /sidebar menu -->
+
+        <!-- /menu footer buttons -->
+        <div class="sidebar-footer hidden-small">
+          <a data-toggle="tooltip" data-placement="top" title="Settings">
+            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+          </a>
+          <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+          </a>
+          <a data-toggle="tooltip" data-placement="top" title="Lock">
+            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+          </a>
+          <a data-toggle="tooltip" data-placement="top" title="Logout" href="admin_login.html">
+            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+          </a>
+        </div>
+        <!-- /menu footer buttons -->
+      </div>
+    </div>
+
+    <!-- top navigation -->
+    <div class="top_nav">
+      <div class="nav_menu">
+        <nav>
+          <div class="nav toggle">
+            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="">
+              <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <img src="img/avatar/default.jpg">
+                <span class="enum-show">超级管理员</span>
+                <span class=" fa fa-angle-down"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-usermenu pull-right">
+                <li><a href="admin_modifypwd.html">修改密码</a></li>               
+                <li><a href="admin_login.html"><i class="fa fa-sign-out pull-right"></i> 退出登录</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- /top navigation -->
+
+    <!-- page content -->
+    <div class="right_col" role="main">
+      <div class="row">
+        <div class="col-xs-12 x_title">
+          <h3>数据字典</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="page-size">每页显示记录数：</label>
+              <select class="form-control" id="page-size">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row" >
+          <form  class="form-inline" id="search-form">
+              <div class="form-group col-xs-12 col-sm-6 col-md-3">
+                  <label for="type">数据类型：</label>
+                  <select name="type" id="type" class="form-control">
+                    <option value="">请选择</option>
+                  </select>
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-2">
+                  <button class="btn btn-primary" id="search-btn" type="button">查询</button>
+              </div>
+          </form>
+      </div>
+      <div class="row" >
+        <div class="col-xs-12 col-sm-8">
+          <div class="table-responsive">
+            <table class="table table-hover table-striped" >
+              <thead>
+              <tr>
+                <th>数据编号</th>
+                <th>数据类型</th>
+                <th>数据明细</th>
+                <th>操作</th>
+              </tr>
+              </thead>
+              <tbody id="tb1">
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <button class="btn btn-success" id="add-data" data-toggle="modal" data-target="#addDataModal">增加类型</button>
+            </div>
+            <div class="col-xs-6">
+              <ul class="pagination pull-right" id="pagination">
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!--修改部门信息模态框显示-->
+      <div id="modifyDataModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+           <div class="modal-header">
+              <span class="close glyphicon glyphicon-remove-circle" data-dismiss="modal"></span>
+           </div>
+           <div class="modal-body">
+              <form class="form-horizontal">
+                <!--显示在页面的表单数据-->
+                <div class="form-group">
+                    <div class="col-xs-3">
+                      <label class="control-label" for="m-id">数据编号 :</label>
+                    </div>
+                    <div class="col-xs-8">
+                      <input class="form-control" type="text" value="" id="m-id" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-3">
+                      <label class="control-label" for="m-type">数据类型 :</label>
+                    </div>
+                    <div class="col-xs-8">
+                      <input class="form-control" type="text" value="" id="m-type" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-3">
+                      <label class="control-label" for="m-mxname">数据明细 :</label>
+                    </div>
+                    <div class="col-xs-8">
+                      <input class="form-control" type="text" value="" id="m-mxname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-warning submit-btn" type="button" data-dismiss="modal">确认修改</button>
+                </div>
+              </form>
+           </div>      
+         </div>
+        </div>
+      </div>
+      <!--新增数据模态框显示-->
+      <div id="addDataModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+           <div class="modal-header">
+              <span class="close glyphicon glyphicon-remove-circle" data-dismiss="modal"></span>
+           </div>
+           <div class="modal-body">
+              <form class="form-horizontal">
+                <!--显示在页面的表单数据-->
+                <div class="form-group">
+                    <div class="col-xs-3">
+                      <label class="control-label" for="a-type">数据类型 :</label>
+                    </div>
+                    <div class="col-xs-8">
+                      <input class="form-control" type="text" value="" id="a-type">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-3">
+                      <label class="control-label" for="a-mxname">数据明细 :</label>
+                    </div>
+                    <div class="col-xs-8">
+                      <input class="form-control" type="text" value="" id="a-mxname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-warning submit-btn" type="button" data-dismiss="modal">确认提交</button>
+                </div>
+              </form>
+           </div>      
+         </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page content -->
+
+  </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<!--<script src="js/jquery.flot.js"></script>-->
+<script src="js/bootstrap.js"></script>
+<script src="js/app.js"></script>
+<script src="js/admin_datainfo.js"></script>
+<script>
+ 
+</script>
+</body>
+</html>
